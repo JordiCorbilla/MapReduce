@@ -1,12 +1,12 @@
 # MapReduce
 **Data parallel text processing with MapReduce.**
 
-![](https://img.shields.io/badge/license-MIT-red.svg) ![](https://img.shields.io/badge/NET-4.5-red.svg)
+![](https://img.shields.io/badge/license-MIT-red.svg) ![](https://img.shields.io/badge/NET-4.6-red.svg)
 
 This is one my solution for this common problem using MapReduce.
 The best way to process any task is to split it in several chunks and divide the work amongst several **'workers'** in a distributed way and then compose the results in a later stage. 
 
-For this problem I am using **MapReduce approach** using **LINQ** and **.NET 4.5.2**.
+For this problem I am using **MapReduce approach** using **LINQ** and **.NET 4.6**.
 
 Processing the file sequentially and keeping the results in a **dictionary <key, value>** is an easy task but with a really bad performance. Using MapReduce strategy we could split the work and then combine the results in a concurrent dictionary:
 
