@@ -77,32 +77,23 @@ namespace CountingWordsConsole
         //I'm just filtering for digits or letters.
         private void CleanUpWord(string[] words)
         {
-            //StringBuilder wordList = new StringBuilder();
-            //List<StringBuilder> list = new List<StringBuilder>();
             StringBuilder[] list = new StringBuilder[words.Length];
 
             for (int i = 0; i < words.Length; i++)
                 list[i] = new StringBuilder();
-           // list.Add(new StringBuilder());
 
-            //Task[] tasks = new Task<int>[words.Length];
             List<Task> tasks = new List<Task>();
 
-            //for (int i = 0; i < words.Length; i++)
-            //    tasks[i] = new Task();
-
             int index = 0;
+            //This will generate as many tasks needed for the group of words
             foreach (string word in words)
             {
                 int i = index;
                 tasks.Add( 
                     Task.Factory.StartNew(() =>
-                {
-                    //lock(index)
-                    //{
+                    {
                         LetterOrDigit(word, list[i]);
-                    //}
-                }));
+                    }));
                 index++;
             }
             Task.WaitAll(tasks.ToArray());
@@ -114,24 +105,7 @@ namespace CountingWordsConsole
                     _wordChunks.Add(list[i].ToString());
                     list[i].Clear();
                 }
-            }
-
-            //foreach (string word in words)
-            //{   
-            //    //Remove unwanted characters
-            //    foreach (char c in word)
-            //    {
-            //        //We could add more filtering here as I'm just considering letters or digits.
-            //        if (char.IsLetterOrDigit(c))
-            //            wordList.Append(c);
-            //    }
-            //    //Send word to the wordChunks Blocking Collection
-            //    if (wordList.Length > 0)
-            //    {
-            //        _wordChunks.Add(wordList.ToString());
-            //        wordList.Clear();
-            //    }
-            //}            
+            }          
         }
 
         private void LetterOrDigit(string word, StringBuilder sb)

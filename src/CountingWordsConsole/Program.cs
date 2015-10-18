@@ -28,6 +28,7 @@
 // @date: 23/03/2015
 //######################################
 
+using Common.library;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -44,6 +45,20 @@ namespace CountingWordsConsole
                 Console.WriteLine("Usage: CountingWordsConsole <filename>");
                 return 1;
             }
+
+            StateTimeClass StateObj = new StateTimeClass();
+            StateObj.Canceled = false;
+            StateObj.handler = new PerformanceHandler();
+            StateObj.Value = 1;
+            System.Threading.TimerCallback TimerDelegate = new System.Threading.TimerCallback(TimerTask);
+
+            // Create a timer that calls a procedure every 200ms
+            // Note: There is no Start method; the timer starts running as soon as 
+            // the instance is created.
+            System.Threading.Timer TimerItem = new System.Threading.Timer(TimerDelegate, StateObj, 200, 200);
+
+            // Save a reference for Dispose.
+            StateObj.Reference = TimerItem;
 
             Reducer reducer = new Reducer();
             try
@@ -65,8 +80,26 @@ namespace CountingWordsConsole
             {
                 Console.WriteLine(ex.Message);                
             }
-               
+
+            // Request Dispose of the timer object.
+            StateObj.Canceled = true;
+
             return 0;
+        }
+
+        private static void TimerTask(object Status)
+        {
+            StateTimeClass State = (StateTimeClass)Status;
+            // Use the interlocked class to increment the counter variable.
+            System.Threading.Interlocked.Increment(ref State.Value);
+            Debug.WriteLine("Launched new thread  " + DateTime.Now.ToString());
+            State.handler.flushToDisk();
+            if (State.Canceled)
+            // Dispose Requested.
+            {
+                State.Reference.Dispose();
+                Debug.WriteLine("Done  " + DateTime.Now.ToString());
+            }
         }
     }
    
