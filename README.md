@@ -35,7 +35,7 @@ catch (Exception ex)
 **Benchmark testing:**
 
 - This solution can count 500k workds in 400ms using 1 processor with 4 cores.
-- Download the version 1.0 from here. ![](https://app.box.com/s/jfh684sgqtp0it856fvcv6186sssn3m3)
+- Download the version 1.0 from here. !(https://app.box.com/s/jfh684sgqtp0it856fvcv6186sssn3m3)
 
 **Licence**
 -------
