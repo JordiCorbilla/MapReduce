@@ -55,7 +55,7 @@ namespace CountingWordsConsole
             // Create a timer that calls a procedure every 200ms
             // Note: There is no Start method; the timer starts running as soon as 
             // the instance is created.
-            System.Threading.Timer TimerItem = new System.Threading.Timer(TimerDelegate, StateObj, 200, 200);
+            System.Threading.Timer TimerItem = new System.Threading.Timer(TimerDelegate, StateObj, 100, 100);
 
             // Save a reference for Dispose.
             StateObj.Reference = TimerItem;
@@ -63,6 +63,7 @@ namespace CountingWordsConsole
             Reducer reducer = new Reducer();
             try
             {
+                SystemDetails.ShowCPUDetails();
                 Stopwatch sw = new Stopwatch();
                 string readText = File.ReadAllText(args[0]);
                 Console.WriteLine("Starting reduction");
