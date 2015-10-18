@@ -34,7 +34,7 @@ catch (Exception ex)
 
 **Benchmark testing:**
 
-- This solution can count 500k in 400ms.
+- This solution can count 500k workds in 400ms using 1 processor with 4 cores.
 
 **Licence**
 -------
