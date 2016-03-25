@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mapreduce by JordiCorbilla</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Mapreduce</h1>
+        <p>Data parallel text processing with MapReduce</p>
+
+        <p class="view"><a href="https://github.com/JordiCorbilla/MapReduce">View the Project on GitHub <small>JordiCorbilla/MapReduce</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/JordiCorbilla/MapReduce/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/JordiCorbilla/MapReduce/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/JordiCorbilla/MapReduce">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="mapreduce" class="anchor" href="#mapreduce" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MapReduce</h1>
+
+<p><strong>Data parallel text processing with MapReduce.</strong></p>
+
+<p><img src="https://img.shields.io/badge/license-MIT-red.svg" alt=""> <img src="https://img.shields.io/badge/NET-4.6-red.svg" alt=""></p>
+
+<p>This is one my solution for this common problem using MapReduce.
+The best way to process any task is to split it in several chunks and divide the work amongst several <strong>'workers'</strong> in a distributed way and then compose the results in a later stage. </p>
+
+<p>For this problem I am using <strong>MapReduce approach</strong> using <strong>LINQ</strong> and <strong>.NET 4.6</strong>.</p>
+
+<p>Processing the file sequentially and keeping the results in a <strong>dictionary </strong> is an easy task but with a really bad performance. Using MapReduce strategy we could split the work and then combine the results in a concurrent dictionary:</p>
+
+<p><img src="http://3.bp.blogspot.com/-kp8P4JNTZGs/Vf6rVGiuweI/AAAAAAAAFHk/uwvz_faeJjY/s640/examplemapreduce.png" alt=""></p>
+
+<p><em>Example usage:</em></p>
+
+<div class="highlight highlight-source-cs"><pre>Reducer reducer = <span class="pl-k">new</span> Reducer();
+<span class="pl-k">try</span>
+{
+    <span class="pl-k">string</span> readText = File.ReadAllText(args[<span class="pl-c1">0</span>]);
+    Console.WriteLine(<span class="pl-s"><span class="pl-pds">"</span>Starting reduction<span class="pl-pds">"</span></span>);
+    reducer.MapReduce(readText);
+    Console.WriteLine(<span class="pl-s"><span class="pl-pds">"</span>Reduction completed<span class="pl-pds">"</span></span>);
+    File.WriteAllText(<span class="pl-s"><span class="pl-pds">"</span>Results.txt<span class="pl-pds">"</span></span>, reducer.SortedResults().ToString());
+    Console.WriteLine(<span class="pl-s"><span class="pl-pds">"</span>Done!, processing {0:D} words<span class="pl-pds">"</span></span>, reducer.Numwords);
+    Console.WriteLine(<span class="pl-s"><span class="pl-pds">"</span>Please review Results.txt<span class="pl-pds">"</span></span>);
+
+}
+<span class="pl-k">catch</span> (Exception ex)
+{
+    Console.WriteLine(ex.Message);                
+}</pre></div>
+
+<p><strong>Benchmark testing:</strong></p>
+
+<ul>
+<li>This solution can count 500k workds in 400ms using 1 processor with 4 cores.</li>
+<li>Download the version 1.0 from here. <a href="https://app.box.com/s/jfh684sgqtp0it856fvcv6186sssn3m3">https://app.box.com/s/jfh684sgqtp0it856fvcv6186sssn3m3</a>
+</li>
+</ul>
+
+<h2>
+<a id="licence" class="anchor" href="#licence" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Licence</strong>
+</h2>
+
+<pre><code>The MIT License (MIT)
+
+Copyright (c) 2015 Jordi Corbilla
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/JordiCorbilla">JordiCorbilla</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
