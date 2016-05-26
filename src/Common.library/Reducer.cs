@@ -36,7 +36,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CountingWordsConsole
+namespace Common.library
 {
     //Class that mimics the MapReduce functionality
     //It will load the text in chunks of 100 words and
