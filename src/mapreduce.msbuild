@@ -43,7 +43,7 @@
 		<MSBuild
 		  Projects="MapReduce.Tests\MapReduce.Tests.csproj"
 		  Targets="Clean;Build;ResolveReferences;"
-		  Properties="Configuration=Release; OutDir=$(ReleaseFolder)\MapReduce.Tests\"
+		  Properties="Configuration=Debug; OutDir=$(ReleaseFolder)\MapReduce.Tests\"
 		  ContinueOnError="true"/>
 	</Target>
   <Target Name="BuildAll" DependsOnTargets="Build_CountingWordsConsole; Build_MapReduceTests" />

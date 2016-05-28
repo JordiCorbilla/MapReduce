@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("MapReduce.Tests")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("MapReduce.Tests")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Copyright ©  Jordi Corbilla 2016")]
 [assembly: AssemblyProduct("MapReduce.Tests")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright ©  Jordi Corbilla 2016")]
+[assembly: AssemblyTrademark("Copyright ©  Jordi Corbilla 2016")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
