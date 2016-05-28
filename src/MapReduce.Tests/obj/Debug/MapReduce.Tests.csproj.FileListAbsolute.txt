@@ -12,3 +12,17 @@ C:\Desk\Source code\MapReduce\trunk\src\MapReduce.Tests\obj\Debug\MapReduce.Test
 C:\Desk\Source code\MapReduce\trunk\src\MapReduce.Tests\obj\Debug\MapReduce.Tests.pdb
 C:\Desk\Source code\MapReduce\trunk\src\MapReduce.Tests\bin\Debug\Common.library.dll
 C:\Desk\Source code\MapReduce\trunk\src\MapReduce.Tests\bin\Debug\Common.library.pdb
+C:\Users\jordi coll\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\MapReduce.Tests.dll
+C:\Users\jordi coll\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\MapReduce.Tests.pdb
+C:\Users\jordi coll\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\Castle.Core.dll
+C:\Users\jordi coll\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\Common.library.dll
+C:\Users\jordi coll\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\jordi coll\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\Moq.dll
+C:\Users\jordi coll\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\nunit.framework.dll
+C:\Users\jordi coll\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\Common.library.pdb
+C:\Users\jordi coll\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\Castle.Core.xml
+C:\Users\jordi coll\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\Moq.xml
+C:\Users\jordi coll\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\nunit.framework.xml
+C:\Users\jordi coll\Source\Repos\MapReduce\src\MapReduce.Tests\obj\Debug\MapReduce.Tests.csprojResolveAssemblyReference.cache
+C:\Users\jordi coll\Source\Repos\MapReduce\src\MapReduce.Tests\obj\Debug\MapReduce.Tests.dll
+C:\Users\jordi coll\Source\Repos\MapReduce\src\MapReduce.Tests\obj\Debug\MapReduce.Tests.pdb

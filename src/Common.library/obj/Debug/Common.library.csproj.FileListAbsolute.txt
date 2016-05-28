@@ -1,0 +1,7 @@
+C:\Users\jordi coll\Source\Repos\MapReduce\src\Common.library\bin\Debug\Common.library.dll
+C:\Users\jordi coll\Source\Repos\MapReduce\src\Common.library\bin\Debug\Common.library.pdb
+C:\Users\jordi coll\Source\Repos\MapReduce\src\Common.library\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\jordi coll\Source\Repos\MapReduce\src\Common.library\bin\Debug\System.Threading.Tasks.Dataflow.xml
+C:\Users\jordi coll\Source\Repos\MapReduce\src\Common.library\obj\Debug\Common.library.csprojResolveAssemblyReference.cache
+C:\Users\jordi coll\Source\Repos\MapReduce\src\Common.library\obj\Debug\Common.library.dll
+C:\Users\jordi coll\Source\Repos\MapReduce\src\Common.library\obj\Debug\Common.library.pdb
