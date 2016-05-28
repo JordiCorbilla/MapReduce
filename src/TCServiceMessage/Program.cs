@@ -37,15 +37,15 @@ namespace TCServiceMessage
         static void Main(string[] args)
         {
             if (args.Length == 0 || args.Length < 1)
-            {
+            {
                 Console.WriteLine("Please specify the output.dcvr file path.");
                 Console.WriteLine("Example:");
                 Console.WriteLine(@"TCServiceMessage C:\temp\output.dcvr");
             }
             else
-            {
+            {
                 Console.WriteLine("*******************************************");
-                Console.WriteLine(@"##teamcity[importData type='dotNetCoverage' tool='dotcover' path='"+ args[0] + "']");
+                Console.WriteLine(@"##teamcity[importData type='dotNetCoverage' tool='dotcover' path='" + args[0] + "']");
             }
         }
     }
