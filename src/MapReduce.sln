@@ -11,6 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapReduce.Tests", "MapReduc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D751A6B9-7B52-457F-A044-3F58C6E146C2}"
 	ProjectSection(SolutionItems) = preProject
+		coverage.xml = coverage.xml
 		mapreduce.msbuild = mapreduce.msbuild
 	EndProjectSection
 EndProject
