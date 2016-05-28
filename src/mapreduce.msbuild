@@ -1,0 +1,50 @@
+﻿<!--MapReduce msbuild
+//The MIT License (MIT)
+
+//Copyright (c) 2015 Jordi Corbilla
+
+//Permission is hereby granted, free of charge, to any person obtaining a copy
+//of this software and associated documentation files (the "Software"), to deal
+//in the Software without restriction, including without limitation the rights
+//to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//copies of the Software, and to permit persons to whom the Software is
+//furnished to do so, subject to the following conditions:
+
+//The above copyright notice and this permission notice shall be included in
+//all copies or substantial portions of the Software.
+
+//THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//THE SOFTWARE.
+
+//######################################
+// Counting words using MapReduce Approach 
+// http://en.wikipedia.org/wiki/MapReduce
+// @Author: Jordi Corbilla
+// @version: 1.0
+// @date: 23/03/2015
+//######################################
+-->
+  <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5" DefaultTargets="BuildAll">
+	<Target Name="Build_CountingWordsConsole" >
+		<RemoveDir Directories="$(ReleaseFolder)\CountingWordsConsole" ContinueOnError="true" />
+		<MSBuild
+		  Projects="CountingWordsConsole\CountingWordsConsole.csproj"
+		  Properties="Configuration=Release; OutDir=$(ReleaseFolder)\CountingWordsConsole\"
+		  Targets="Clean;Build;ResolveReferences"
+		  ContinueOnError="true"/>
+	</Target>
+	<Target Name="Build_MapReduceTests" >
+		<RemoveDir Directories="$(ReleaseFolder)\MapReduce.Tests" ContinueOnError="true" />
+		<MSBuild
+		  Projects="MapReduce.Tests\MapReduce.Tests.csproj"
+		  Targets="Clean;Build;ResolveReferences;"
+		  Properties="Configuration=Release; OutDir=$(ReleaseFolder)\MapReduce.Tests\"
+		  ContinueOnError="true"/>
+	</Target>
+  <Target Name="BuildAll" DependsOnTargets="Build_CountingWordsConsole; Build_MapReduceTests" />
+</Project>
