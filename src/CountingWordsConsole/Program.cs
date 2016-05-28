@@ -31,6 +31,7 @@
 using Common.library;
 using System;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 
 namespace CountingWordsConsole
@@ -39,10 +40,26 @@ namespace CountingWordsConsole
     {
         static int Main(string[] args)
         {
+            //ASCII art from http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine(@"___  ___           ______         _                ");
+            Console.WriteLine(@"|  \/  |           | ___ \       | |               ");
+            Console.WriteLine(@"| .  . | __ _ _ __ | |_/ /___  __| |_   _  ___ ___ ");
+            Console.WriteLine(@"| |\/| |/ _` | '_ \|    // _ \/ _` | | | |/ __/ _ \");
+            Console.WriteLine(@"| |  | | (_| | |_) | |\ \  __/ (_| | |_| | (_|  __/");
+            Console.WriteLine(@"\_|  |_/\__,_| .__/\_| \_\___|\__,_|\__,_|\___\___|");
+            Console.WriteLine(@"             | |                                   ");
+            Console.WriteLine(@"             |_|                                   ");
+            Console.WriteLine(@" approach by Jordi Corbilla, 2016");
+            Console.WriteLine(@"");
+            Console.ResetColor();
             if (args.Length == 0)
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Please enter the file you want to process.");
                 Console.WriteLine("Usage: CountingWordsConsole <filename>");
+                Console.WriteLine(@"");
+                Console.ResetColor();
                 return 1;
             }
 
@@ -71,10 +88,12 @@ namespace CountingWordsConsole
                 reducer.MapReduce(readText);
                 sw.Stop();
                 Console.WriteLine("Reduction completed");
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Elapsed={0}", sw.Elapsed);
                 File.WriteAllText("Results.txt", reducer.SortedResults().ToString());
-                Console.WriteLine("Done!, processing {0:D} words", reducer.Numwords);
+                Console.WriteLine("Done!, processing {0:D} words", reducer.Numwords.ToString("N", CultureInfo.InvariantCulture));
                 Console.WriteLine("Please review Results.txt");
+                Console.ResetColor();
 
             }
             catch (Exception ex)
