@@ -12,6 +12,8 @@ Processing the file sequentially and keeping the results in a **dictionary <key,
 
 ![](http://3.bp.blogspot.com/-kp8P4JNTZGs/Vf6rVGiuweI/AAAAAAAAFHk/uwvz_faeJjY/s640/examplemapreduce.png)
 
+![](https://3.bp.blogspot.com/-I1VeJ2WgIpI/V0wHmC0c3TI/AAAAAAAAFeU/J35AcpRlL_EM9eleNGVJwUQmeWs6vE7fQCLcB/s1600/aa2.png)
+
 *Example usage:*
 ```C#
 Reducer reducer = new Reducer();
