@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Thundax.MapReduce</name>
+    </assembly>
+    <members>
+        <member name="T:Thundax.MapReduce.PerformanceHandler">
+            <summary>
+            Performance Handler
+            </summary>
+        </member>
+        <member name="M:Thundax.MapReduce.PerformanceHandler.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:Thundax.MapReduce.PerformanceHandler.getCurrentCpuUsage">
+            <summary>
+            Get Current CPU usage
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Thundax.MapReduce.PerformanceHandler.getAvailableRAM">
+            <summary>
+            Get Available RAM
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Thundax.MapReduce.PerformanceHandler.flushToDisk">
+            <summary>
+            Flush content to disk
+            </summary>
+        </member>
+        <member name="T:Thundax.MapReduce.StateTimeClass">
+            <summary>
+            State Time Class
+            Used to hold parameters for calls to TimerTask
+            </summary>
+        </member>
+        <member name="F:Thundax.MapReduce.StateTimeClass.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="F:Thundax.MapReduce.StateTimeClass.Reference">
+            <summary>
+            Timer Reference
+            </summary>
+        </member>
+        <member name="F:Thundax.MapReduce.StateTimeClass.handler">
+            <summary>
+            Handler
+            </summary>
+        </member>
+        <member name="F:Thundax.MapReduce.StateTimeClass.Canceled">
+            <summary>
+            Canceled
+            </summary>
+        </member>
+        <member name="T:Thundax.MapReduce.Reducer">
+             <summary>
+            Class that mimics the MapReduce functionality
+            It will load the text in chunks of 100 words and
+            process them in different threads and updating
+            a global dictionary
+             </summary>
+        </member>
+        <member name="P:Thundax.MapReduce.Reducer.Numwords">
+            <summary>
+            Number of words
+            </summary>
+        </member>
+        <member name="M:Thundax.MapReduce.Reducer.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:Thundax.MapReduce.Reducer.CreateChunks(System.String,System.Int32)">
+             <summary>
+             Return a list of chunks
+            Basic idea is that the file is being divided in chunks of 100 words and
+            then parallelly processed to increase performance
+             </summary>
+        </member>
+        <member name="M:Thundax.MapReduce.Reducer.MapReduce(System.String)">
+             <summary>
+            Main method to reduce the text and add all the words in a concurrent dictionary with a pair of key, value
+            Each word will be recorded as key and when it's found, the value will be increased using a thread safe increment.
+             </summary>
+             <param name="text"></param>
+        </member>
+        <member name="M:Thundax.MapReduce.Reducer.SortedResults">
+             <summary>
+            Method for display purposes using a sorted list.
+            Also to count the whole list of words.
+            This is just for testing and display
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="T:Thundax.MapReduce.SystemDetails">
+            <summary>
+            System Details
+            </summary>
+        </member>
+        <member name="M:Thundax.MapReduce.SystemDetails.ShowCPUDetails">
+            <summary>
+            Show CPU Details
+            </summary>
+        </member>
+        <member name="T:Thundax.MapReduce.Writer">
+            <summary>
+            Writer class
+            </summary>
+        </member>
+        <member name="M:Thundax.MapReduce.Writer.WriteToFile(System.String,System.Text.StringBuilder)">
+            <summary>
+            Write to file
+            </summary>
+            <param name="Filepath"></param>
+            <param name="text"></param>
+        </member>
+    </members>
+</doc>

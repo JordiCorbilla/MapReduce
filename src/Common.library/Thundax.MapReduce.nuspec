@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Thundax.MapReduce.dll</id>
+    <version>1.0.0</version>
+    <authors>Jordi Corbilla</authors>
+    <owners>Jordi Corbilla</owners>
+    <licenseUrl>https://github.com/JordiCorbilla/MapReduce/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/JordiCorbilla/MapReduce</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MapReduce library allows you to process large data sets of data using a parallel and distributed algorithm.</description>
+    <releaseNotes>Version 1. Concurrent dictionary with a worker pool.</releaseNotes>
+    <copyright>Copyright Jordi Corbilla 2016</copyright>
+    <tags>MapReduce Parallel</tags>
+  </metadata>
+</package>
