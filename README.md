@@ -14,8 +14,14 @@ Processing the file sequentially and keeping the results in a **dictionary <key,
 
 ![](https://3.bp.blogspot.com/-I1VeJ2WgIpI/V0wHmC0c3TI/AAAAAAAAFeU/J35AcpRlL_EM9eleNGVJwUQmeWs6vE7fQCLcB/s1600/aa2.png)
 
+*Nuget Package:*
+You can download this package from Nuget in your VS solution.
+https://www.nuget.org/packages/Thundax.MapReduce.dll/
+
 *Example usage:*
 ```C#
+using Thundax.MapReduce;
+
 Reducer reducer = new Reducer();
 try
 {
@@ -38,6 +44,7 @@ catch (Exception ex)
 
 - This solution can count 500k workds in 400ms using 1 processor with 4 cores.
 - Download the version 1.0 from here. https://app.box.com/s/jfh684sgqtp0it856fvcv6186sssn3m3
+- or via Nuget https://www.nuget.org/packages/Thundax.MapReduce.dll/
 
 **Licence**
 -------
