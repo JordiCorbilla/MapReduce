@@ -36,19 +36,26 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Common.library
+namespace Thundax.MapReduce
 {
-    //Class that mimics the MapReduce functionality
-    //It will load the text in chunks of 100 words and
-    //process them in different threads and updating
-    //a global dictionary
+    /// <summary>
+    ///Class that mimics the MapReduce functionality
+    ///It will load the text in chunks of 100 words and
+    ///process them in different threads and updating
+    ///a global dictionary
+    /// </summary>
     public class Reducer
     {
         private readonly ConcurrentDictionary<string, int> _distinctWordList;
         private readonly BlockingCollection<string> _wordChunks;
+        /// <summary>
+        /// Number of words
+        /// </summary>
         public int Numwords { get; set; }
 
-        //Constructor
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public Reducer()
         {
             _distinctWordList = new ConcurrentDictionary<string, int>();
@@ -57,9 +64,11 @@ namespace Common.library
             Numwords = 0;
         }
 
-        //Return a list of chunks
-        //Basic idea is that the file is being divided in chunks of 100 words and
-        //then parallely processed to increase performance
+        /// <summary>
+        /// Return a list of chunks
+        ///Basic idea is that the file is being divided in chunks of 100 words and
+        ///then parallelly processed to increase performance
+        /// </summary>
         private IEnumerable<string> CreateChunks(string text, int chunkSize)
         {
             List<string> chunks = new List<string>();
@@ -142,8 +151,11 @@ namespace Common.library
             Parallel.ForEach(_wordChunks.GetConsumingEnumerable(), word => { _distinctWordList.AddOrUpdate(word, 1, (key, oldValue) => Interlocked.Increment(ref oldValue)); });
         }
 
-        //Main method to reduce the text and add all the words in a concurrent dictionary with a pair of key, value
-        //Each word will be recorded as key and when it's found, the value will be increased using a thread safe increment.
+        /// <summary>
+        ///Main method to reduce the text and add all the words in a concurrent dictionary with a pair of key, value
+        ///Each word will be recorded as key and when it's found, the value will be increased using a thread safe increment.
+        /// </summary>
+        /// <param name="text"></param>
         public void MapReduce(string text)
         {  
             //Create background process to map input data to words
@@ -155,9 +167,12 @@ namespace Common.library
             UpdateDictionary();
         }
 
-        //Method for display purposes using a sorted list.
-        //Also to count the whole list of words.
-        //This is just for testing and display
+        /// <summary>
+        ///Method for display purposes using a sorted list.
+        ///Also to count the whole list of words.
+        ///This is just for testing and display
+        /// </summary>
+        /// <returns></returns>
         public StringBuilder SortedResults()
         {
             StringBuilder sb = new StringBuilder();
@@ -168,6 +183,5 @@ namespace Common.library
             }
             return sb;
         }
-
     }
 }

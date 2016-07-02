@@ -70,9 +70,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common.library\Common.library.csproj">
+    <ProjectReference Include="..\Common.library\Thundax.MapReduce.csproj">
       <Project>{6a96b00f-16f2-42d3-af90-cfc4380cc83d}</Project>
-      <Name>Common.library</Name>
+      <Name>Thundax.MapReduce</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

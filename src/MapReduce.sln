@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountingWordsConsole", "CountingWordsConsole\CountingWordsConsole.csproj", "{F3662F42-8519-45FC-9840-E601AB6D834F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.library", "Common.library\Common.library.csproj", "{6A96B00F-16F2-42D3-AF90-CFC4380CC83D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thundax.MapReduce", "Common.library\Thundax.MapReduce.csproj", "{6A96B00F-16F2-42D3-AF90-CFC4380CC83D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapReduce.Tests", "MapReduce.Tests\MapReduce.Tests.csproj", "{EA487E0D-B5BD-4657-A7A5-3DA11277489A}"
 EndProject

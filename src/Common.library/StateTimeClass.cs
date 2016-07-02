@@ -20,14 +20,32 @@
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //THE SOFTWARE.
 
-namespace Common.library
+namespace Thundax.MapReduce
 {
+    /// <summary>
+    /// State Time Class
+    /// Used to hold parameters for calls to TimerTask
+    /// </summary>
     public class StateTimeClass
     {
-        // Used to hold parameters for calls to TimerTask.
+        /// <summary>
+        /// Value
+        /// </summary>
         public int Value;
+
+        /// <summary>
+        /// Timer Reference
+        /// </summary>
         public System.Threading.Timer Reference;
+
+        /// <summary>
+        /// Handler
+        /// </summary>
         public PerformanceHandler handler;
+
+        /// <summary>
+        /// Canceled
+        /// </summary>
         public bool Canceled;
     }
 }

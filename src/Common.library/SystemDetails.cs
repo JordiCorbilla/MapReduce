@@ -22,10 +22,16 @@
 
 using System;
 
-namespace Common.library
+namespace Thundax.MapReduce
 {
+    /// <summary>
+    /// System Details
+    /// </summary>
     public class SystemDetails
     {
+        /// <summary>
+        /// Show CPU Details
+        /// </summary>
         public static void ShowCPUDetails()
         {
             foreach (var item in new System.Management.ManagementObjectSearcher("Select * from Win32_ComputerSystem").Get())

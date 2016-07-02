@@ -28,7 +28,7 @@
 // @date: 23/03/2015
 //######################################
 
-using Common.library;
+using Thundax.MapReduce;
 using NUnit.Framework;
 using System;
 using System.Diagnostics;

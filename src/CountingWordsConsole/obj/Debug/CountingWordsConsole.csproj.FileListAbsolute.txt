@@ -6,3 +6,12 @@ C:\Users\jordi coll\Source\Repos\MapReduce\src\CountingWordsConsole\bin\Debug\Co
 C:\Users\jordi coll\Source\Repos\MapReduce\src\CountingWordsConsole\obj\Debug\CountingWordsConsole.csprojResolveAssemblyReference.cache
 C:\Users\jordi coll\Source\Repos\MapReduce\src\CountingWordsConsole\obj\Debug\CountingWordsConsole.exe
 C:\Users\jordi coll\Source\Repos\MapReduce\src\CountingWordsConsole\obj\Debug\CountingWordsConsole.pdb
+C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\bin\Debug\CountingWordsConsole.exe.config
+C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\obj\Debug\CountingWordsConsole.exe
+C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\obj\Debug\CountingWordsConsole.pdb
+C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\bin\Debug\CountingWordsConsole.exe
+C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\bin\Debug\CountingWordsConsole.pdb
+C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\obj\Debug\CountingWordsConsole.csprojResolveAssemblyReference.cache
+C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\bin\Debug\Thundax.MapReduce.dll
+C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\bin\Debug\Thundax.MapReduce.pdb
+C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\bin\Debug\Thundax.MapReduce.xml

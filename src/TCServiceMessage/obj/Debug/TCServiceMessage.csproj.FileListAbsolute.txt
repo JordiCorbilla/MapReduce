@@ -4,3 +4,9 @@ C:\Users\jordi coll\Source\Repos\MapReduce\src\TCServiceMessage\bin\Debug\TCServ
 C:\Users\jordi coll\Source\Repos\MapReduce\src\TCServiceMessage\obj\Debug\TCServiceMessage.csprojResolveAssemblyReference.cache
 C:\Users\jordi coll\Source\Repos\MapReduce\src\TCServiceMessage\obj\Debug\TCServiceMessage.exe
 C:\Users\jordi coll\Source\Repos\MapReduce\src\TCServiceMessage\obj\Debug\TCServiceMessage.pdb
+C:\Users\thund\Source\Repos\MapReduce\src\TCServiceMessage\bin\Debug\TCServiceMessage.exe.config
+C:\Users\thund\Source\Repos\MapReduce\src\TCServiceMessage\bin\Debug\TCServiceMessage.exe
+C:\Users\thund\Source\Repos\MapReduce\src\TCServiceMessage\bin\Debug\TCServiceMessage.pdb
+C:\Users\thund\Source\Repos\MapReduce\src\TCServiceMessage\obj\Debug\TCServiceMessage.csprojResolveAssemblyReference.cache
+C:\Users\thund\Source\Repos\MapReduce\src\TCServiceMessage\obj\Debug\TCServiceMessage.exe
+C:\Users\thund\Source\Repos\MapReduce\src\TCServiceMessage\obj\Debug\TCServiceMessage.pdb

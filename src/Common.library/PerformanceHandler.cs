@@ -23,14 +23,20 @@
 using System.Diagnostics;
 using System.Text;
 
-namespace Common.library
+namespace Thundax.MapReduce
 {
+    /// <summary>
+    /// Performance Handler
+    /// </summary>
     public class PerformanceHandler
     {
         private PerformanceCounter _cpuCounter;
         private PerformanceCounter _ramCounter;
         private Writer _writer;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public PerformanceHandler()
         {
             _writer = new Writer();
@@ -43,16 +49,27 @@ namespace Common.library
             _ramCounter = new PerformanceCounter("Memory", "Available MBytes");
         }
 
+        /// <summary>
+        /// Get Current CPU usage
+        /// </summary>
+        /// <returns></returns>
         public string getCurrentCpuUsage()
         {
             return _cpuCounter.NextValue() + "%";
         }
 
+        /// <summary>
+        /// Get Available RAM
+        /// </summary>
+        /// <returns></returns>
         public string getAvailableRAM()
         {
             return _ramCounter.NextValue() + "MB";
         }
 
+        /// <summary>
+        /// Flush content to disk
+        /// </summary>
         public void flushToDisk()
         {
             StringBuilder Value = new StringBuilder();

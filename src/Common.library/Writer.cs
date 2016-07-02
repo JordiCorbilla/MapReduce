@@ -20,16 +20,23 @@
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //THE SOFTWARE.
 
-using System;
 using System.IO;
 using System.Text;
 
-namespace Common.library
+namespace Thundax.MapReduce
 {
+    /// <summary>
+    /// Writer class
+    /// </summary>
     public class Writer
     {
-        private static object locker = new Object();
+        private static object locker = new object();
 
+        /// <summary>
+        /// Write to file
+        /// </summary>
+        /// <param name="Filepath"></param>
+        /// <param name="text"></param>
         public void WriteToFile(string Filepath, StringBuilder text)
         {
             lock (locker)
