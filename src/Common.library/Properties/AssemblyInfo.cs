@@ -1,17 +1,16 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Common.library")]
-[assembly: AssemblyDescription("Copyright ©  Jordi Corbilla 2016")]
+[assembly: AssemblyTitle("Thundax.MapReduce")]
+[assembly: AssemblyDescription("Copyright © Jordi Corbilla 2016")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Copyright ©  Jordi Corbilla 2016")]
-[assembly: AssemblyProduct("Common.library")]
-[assembly: AssemblyCopyright("Copyright ©  Jordi Corbilla 2016")]
-[assembly: AssemblyTrademark("Copyright ©  Jordi Corbilla 2016")]
+[assembly: AssemblyCompany("Copyright © Jordi Corbilla 2016")]
+[assembly: AssemblyProduct("Thundax.MapReduce")]
+[assembly: AssemblyCopyright("Copyright © Jordi Corbilla 2016")]
+[assembly: AssemblyTrademark("Copyright © Jordi Corbilla 2016")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
@@ -10,8 +9,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Copyright ©  Jordi Corbilla 2016")]
 [assembly: AssemblyProduct("MapReduce.Tests")]
-[assembly: AssemblyCopyright("Copyright ©  Jordi Corbilla 2016")]
-[assembly: AssemblyTrademark("Copyright ©  Jordi Corbilla 2016")]
+[assembly: AssemblyCopyright("Copyright © Jordi Corbilla 2016")]
+[assembly: AssemblyTrademark("Copyright © Jordi Corbilla 2016")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

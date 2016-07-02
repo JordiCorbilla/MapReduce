@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("CountingWordsConsole")]
-[assembly: AssemblyDescription("Copyright ©  Jordi Corbilla 2016")]
+[assembly: AssemblyDescription("Copyright © Jordi Corbilla 2016")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Copyright ©  Jordi Corbilla 2016")]
+[assembly: AssemblyCompany("Copyright © Jordi Corbilla 2016")]
 [assembly: AssemblyProduct("CountingWordsConsole")]
-[assembly: AssemblyCopyright("Copyright ©  Jordi Corbilla 2016")]
+[assembly: AssemblyCopyright("Copyright © Jordi Corbilla 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
