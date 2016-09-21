@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <NDepend AppName="MapReduce" Platform="DotNet">
-  <OutputDir KeepXmlFiles="False">C:\Users\thund\Source\Repos\MapReduce\src\NDependOut</OutputDir>
+  <OutputDir KeepXmlFiles="False">.\NDependOut</OutputDir>
   <Assemblies>
     <Name>CountingWordsConsole</Name>
     <Name>Thundax.MapReduce</Name>
@@ -16,10 +16,10 @@
     <Name>nunit.framework</Name>
   </FrameworkAssemblies>
   <Dirs>
-    <Dir>C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\bin\Debug</Dir>
-    <Dir>C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsolePackage\bin\Debug</Dir>
-    <Dir>C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug</Dir>
-    <Dir>C:\Users\thund\Source\Repos\MapReduce\src\TCServiceMessage\bin\Debug</Dir>
+    <Dir>.\CountingWordsConsole\bin\Debug</Dir>
+    <Dir>.\CountingWordsConsolePackage\bin\Debug</Dir>
+    <Dir>.\MapReduce.Tests\bin\Debug</Dir>
+    <Dir>.\TCServiceMessage\bin\Debug</Dir>
     <Dir>C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319</Dir>
     <Dir>C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\WPF</Dir>
   </Dirs>
