@@ -69,7 +69,7 @@ namespace Thundax.MapReduce
         ///Basic idea is that the file is being divided in chunks of 100 words and
         ///then parallelly processed to increase performance
         /// </summary>
-        private IEnumerable<string> CreateChunks(string text, int chunkSize)
+        private static IEnumerable<string> CreateChunks(string text, int chunkSize)
         {
             List<string> chunks = new List<string>();
             int offset = 0;
@@ -117,7 +117,7 @@ namespace Thundax.MapReduce
             }          
         }
 
-        private void LetterOrDigit(string word, StringBuilder sb)
+        private static void LetterOrDigit(string word, StringBuilder sb)
         {
             foreach (char c in word)
             {

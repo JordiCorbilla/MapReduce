@@ -40,19 +40,7 @@ namespace CountingWordsConsole
     {
         static int Main(string[] args)
         {
-            //ASCII art from http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine(@"___  ___           ______         _                ");
-            Console.WriteLine(@"|  \/  |           | ___ \       | |               ");
-            Console.WriteLine(@"| .  . | __ _ _ __ | |_/ /___  __| |_   _  ___ ___ ");
-            Console.WriteLine(@"| |\/| |/ _` | '_ \|    // _ \/ _` | | | |/ __/ _ \");
-            Console.WriteLine(@"| |  | | (_| | |_) | |\ \  __/ (_| | |_| | (_|  __/");
-            Console.WriteLine(@"\_|  |_/\__,_| .__/\_| \_\___|\__,_|\__,_|\___\___|");
-            Console.WriteLine(@"             | |                                   ");
-            Console.WriteLine(@"             |_|                                   ");
-            Console.WriteLine(@" approach by Jordi Corbilla, 2016");
-            Console.WriteLine(@"");
-            Console.ResetColor();
+            PrintHeader();
             if (args.Length == 0)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -62,7 +50,6 @@ namespace CountingWordsConsole
                 Console.ResetColor();
                 return 1;
             }
-
             StateTimeClass StateObj = new StateTimeClass();
             StateObj.Canceled = false;
             StateObj.handler = new PerformanceHandler();
@@ -120,6 +107,23 @@ namespace CountingWordsConsole
                 State.Reference.Dispose();
                 Debug.WriteLine("Done  " + DateTime.Now.ToString());
             }
+        }
+
+        private static void PrintHeader()
+        {
+            //ASCII art from http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine(@"___  ___           ______         _                ");
+            Console.WriteLine(@"|  \/  |           | ___ \       | |               ");
+            Console.WriteLine(@"| .  . | __ _ _ __ | |_/ /___  __| |_   _  ___ ___ ");
+            Console.WriteLine(@"| |\/| |/ _` | '_ \|    // _ \/ _` | | | |/ __/ _ \");
+            Console.WriteLine(@"| |  | | (_| | |_) | |\ \  __/ (_| | |_| | (_|  __/");
+            Console.WriteLine(@"\_|  |_/\__,_| .__/\_| \_\___|\__,_|\__,_|\___\___|");
+            Console.WriteLine(@"             | |                                   ");
+            Console.WriteLine(@"             |_|                                   ");
+            Console.WriteLine(@" approach by Jordi Corbilla, 2016");
+            Console.WriteLine(@"");
+            Console.ResetColor();
         }
     }
    
