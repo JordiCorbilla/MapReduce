@@ -70,7 +70,7 @@ namespace Thundax.MapReduce
         /// <summary>
         /// Flush content to disk
         /// </summary>
-        public void flushToDisk()
+        public void FlushToDisk()
         {
             StringBuilder value = new StringBuilder();
             value.Append(GetCurrentCpuUsage());

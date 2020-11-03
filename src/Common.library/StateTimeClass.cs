@@ -41,7 +41,7 @@ namespace Thundax.MapReduce
         /// <summary>
         /// Handler
         /// </summary>
-        public PerformanceHandler handler;
+        public PerformanceHandler Handler;
 
         /// <summary>
         /// Canceled

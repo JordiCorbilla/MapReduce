@@ -30,7 +30,7 @@ namespace Thundax.MapReduce
     /// </summary>
     public class Writer
     {
-        private static readonly object locker = new object();
+        private static readonly object Locker = new object();
 
         /// <summary>
         /// Write to file
@@ -39,7 +39,7 @@ namespace Thundax.MapReduce
         /// <param name="text"></param>
         public void WriteToFile(string filepath, StringBuilder text)
         {
-            lock (locker)
+            lock (Locker)
             {
                 using (FileStream file = new FileStream(filepath, FileMode.Append, FileAccess.Write, FileShare.Read))
                 using (StreamWriter writer = new StreamWriter(file, Encoding.Unicode))

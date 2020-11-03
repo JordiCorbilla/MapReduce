@@ -32,7 +32,7 @@ namespace Thundax.MapReduce
         /// <summary>
         /// Show CPU Details
         /// </summary>
-        public static void ShowCPUDetails()
+        public static void ShowCpuDetails()
         {
             foreach (var item in new System.Management.ManagementObjectSearcher("Select * from Win32_ComputerSystem").Get())
             {
