@@ -11,7 +11,9 @@ C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\obj\Debug\Countin
 C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\obj\Debug\CountingWordsConsole.pdb
 C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\bin\Debug\CountingWordsConsole.exe
 C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\bin\Debug\CountingWordsConsole.pdb
-C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\obj\Debug\CountingWordsConsole.csprojResolveAssemblyReference.cache
 C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\bin\Debug\Thundax.MapReduce.dll
 C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\bin\Debug\Thundax.MapReduce.pdb
 C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\bin\Debug\Thundax.MapReduce.xml
+C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\obj\Debug\CountingWordsConsole.csprojAssemblyReference.cache
+C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\obj\Debug\CountingWordsConsole.csproj.CoreCompileInputs.cache
+C:\Users\thund\Source\Repos\MapReduce\src\CountingWordsConsole\obj\Debug\CountingWordsConsole.csproj.CopyComplete

@@ -1,6 +1,7 @@
 C:\Users\thund\Source\Repos\MapReduce\src\Common.library\bin\Debug\Thundax.MapReduce.xml
 C:\Users\thund\Source\Repos\MapReduce\src\Common.library\bin\Debug\Thundax.MapReduce.dll
 C:\Users\thund\Source\Repos\MapReduce\src\Common.library\bin\Debug\Thundax.MapReduce.pdb
-C:\Users\thund\Source\Repos\MapReduce\src\Common.library\obj\Debug\thundax.MapReduce.csprojResolveAssemblyReference.cache
 C:\Users\thund\Source\Repos\MapReduce\src\Common.library\obj\Debug\Thundax.MapReduce.dll
 C:\Users\thund\Source\Repos\MapReduce\src\Common.library\obj\Debug\Thundax.MapReduce.pdb
+C:\Users\thund\Source\Repos\MapReduce\src\Common.library\obj\Debug\Thundax.MapReduce.csprojAssemblyReference.cache
+C:\Users\thund\Source\Repos\MapReduce\src\Common.library\obj\Debug\Thundax.MapReduce.csproj.CoreCompileInputs.cache

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <NDepend AppName="MapReduce" Platform="DotNet">
   <OutputDir KeepXmlFiles="False">.\NDependOut</OutputDir>
   <Assemblies>
@@ -73,7 +73,8 @@
   <SourceFileRebasing FromPath="" ToPath="" />
   <PathVariables />
   <RuleFiles />
-  <ProjectRules AreActive="True" /><Queries>
+  <ProjectRules AreActive="True" />
+  <Queries>
     <Group Name="Code Quality" Active="True" ShownInReport="False">
       <Query Active="True" DisplayList="True" DisplayStat="False" DisplaySelectionView="False" IsCriticalRule="True"><![CDATA[// <Name>Types too big - critical</Name>
 warnif count > 0 from t in JustMyCode.Types where 
@@ -8167,4 +8168,5 @@ select new { n, n.NbLinesOfCode }
 //</HowToFix>]]></Query>
       </Group>
     </Group>
-  </Queries></NDepend>
+  </Queries>
+</NDepend>

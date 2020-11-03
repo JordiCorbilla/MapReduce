@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountingWordsConsole", "CountingWordsConsole\CountingWordsConsole.csproj", "{F3662F42-8519-45FC-9840-E601AB6D834F}"
 EndProject
@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		coverage.xml = coverage.xml
 		mapreduce.msbuild = mapreduce.msbuild
-		TCServiceMessage.exe = TCServiceMessage.exe
+		TCServiceMessage\bin\Debug\TCServiceMessage.exe = TCServiceMessage\bin\Debug\TCServiceMessage.exe
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCServiceMessage", "TCServiceMessage\TCServiceMessage.csproj", "{A7F296F9-A55B-4863-9B61-FD502A1C479C}"
@@ -49,5 +49,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DFE094F-8115-4C68-A836-1993FE5F6FE4}
 	EndGlobalSection
 EndGlobal

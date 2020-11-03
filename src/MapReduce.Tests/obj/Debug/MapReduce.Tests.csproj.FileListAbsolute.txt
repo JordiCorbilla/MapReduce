@@ -35,9 +35,11 @@ C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\nunit.framew
 C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\Castle.Core.xml
 C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\Moq.xml
 C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\nunit.framework.xml
-C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\obj\Debug\MapReduce.Tests.csprojResolveAssemblyReference.cache
 C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\obj\Debug\MapReduce.Tests.dll
 C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\obj\Debug\MapReduce.Tests.pdb
 C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\Thundax.MapReduce.dll
 C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\Thundax.MapReduce.pdb
 C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\Thundax.MapReduce.xml
+C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\obj\Debug\MapReduce.Tests.csprojAssemblyReference.cache
+C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\obj\Debug\MapReduce.Tests.csproj.CoreCompileInputs.cache
+C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\obj\Debug\MapReduce.Tests.csproj.CopyComplete
