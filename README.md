@@ -1,7 +1,7 @@
 # MapReduce
 **Data parallel text processing with MapReduce.**
 
-![](https://img.shields.io/badge/license-MIT-red.svg) ![](https://img.shields.io/badge/NET-4.6-red.svg)
+![](https://img.shields.io/badge/license-MIT-red.svg) ![](https://img.shields.io/badge/NET-4.8-red.svg)
 
 This is one my solution for this common problem using MapReduce.
 The best way to process any task is to split it in several chunks and divide the work amongst several **'workers'** in a distributed way and then compose the results in a later stage. 
