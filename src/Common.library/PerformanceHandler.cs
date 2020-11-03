@@ -30,9 +30,9 @@ namespace Thundax.MapReduce
     /// </summary>
     public class PerformanceHandler
     {
-        private PerformanceCounter _cpuCounter;
-        private PerformanceCounter _ramCounter;
-        private Writer _writer;
+        private readonly PerformanceCounter _cpuCounter;
+        private readonly PerformanceCounter _ramCounter;
+        private readonly Writer _writer;
 
         /// <summary>
         /// Constructor
@@ -40,11 +40,11 @@ namespace Thundax.MapReduce
         public PerformanceHandler()
         {
             _writer = new Writer();
-            _cpuCounter = new PerformanceCounter();
+            _cpuCounter = new PerformanceCounter
+            {
+                CategoryName = "Processor", CounterName = "% Processor Time", InstanceName = "_Total"
+            };
 
-            _cpuCounter.CategoryName = "Processor";
-            _cpuCounter.CounterName = "% Processor Time";
-            _cpuCounter.InstanceName = "_Total";
 
             _ramCounter = new PerformanceCounter("Memory", "Available MBytes");
         }
@@ -53,7 +53,7 @@ namespace Thundax.MapReduce
         /// Get Current CPU usage
         /// </summary>
         /// <returns></returns>
-        public string getCurrentCpuUsage()
+        public string GetCurrentCpuUsage()
         {
             return _cpuCounter.NextValue() + "%";
         }
@@ -62,7 +62,7 @@ namespace Thundax.MapReduce
         /// Get Available RAM
         /// </summary>
         /// <returns></returns>
-        public string getAvailableRAM()
+        public string GetAvailableRam()
         {
             return _ramCounter.NextValue() + "MB";
         }
@@ -72,11 +72,11 @@ namespace Thundax.MapReduce
         /// </summary>
         public void flushToDisk()
         {
-            StringBuilder Value = new StringBuilder();
-            Value.Append(getCurrentCpuUsage());
-            Value.Append(" ");
-            Value.Append(getAvailableRAM() + "\n");
-            _writer.WriteToFile(@"resultPerformance.txt", Value);
+            StringBuilder value = new StringBuilder();
+            value.Append(GetCurrentCpuUsage());
+            value.Append(" ");
+            value.Append(GetAvailableRam() + "\n");
+            _writer.WriteToFile(@"resultPerformance.txt", value);
         }
     }
 }

@@ -14,13 +14,13 @@
             Constructor
             </summary>
         </member>
-        <member name="M:Thundax.MapReduce.PerformanceHandler.getCurrentCpuUsage">
+        <member name="M:Thundax.MapReduce.PerformanceHandler.GetCurrentCpuUsage">
             <summary>
             Get Current CPU usage
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Thundax.MapReduce.PerformanceHandler.getAvailableRAM">
+        <member name="M:Thundax.MapReduce.PerformanceHandler.GetAvailableRam">
             <summary>
             Get Available RAM
             </summary>
@@ -65,7 +65,7 @@
             a global dictionary
              </summary>
         </member>
-        <member name="P:Thundax.MapReduce.Reducer.Numwords">
+        <member name="P:Thundax.MapReduce.Reducer.NumWords">
             <summary>
             Number of words
             </summary>
@@ -79,7 +79,7 @@
              <summary>
              Return a list of chunks
             Basic idea is that the file is being divided in chunks of 100 words and
-            then parallelly processed to increase performance
+            then in parallel processed to increase performance
              </summary>
         </member>
         <member name="M:Thundax.MapReduce.Reducer.MapReduce(System.String)">
@@ -116,7 +116,7 @@
             <summary>
             Write to file
             </summary>
-            <param name="Filepath"></param>
+            <param name="filepath"></param>
             <param name="text"></param>
         </member>
     </members>

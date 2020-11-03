@@ -52,7 +52,7 @@ namespace MapReduce.Tests
                 reducer.MapReduce(readText);
                 sw.Stop();
                 Assert.AreEqual(reducer.SortedResults().ToString(), "word: 5\r\n");
-                Assert.AreEqual(reducer.Numwords, 5);
+                Assert.AreEqual(reducer.NumWords, 5);
                 Assert.Less(sw.Elapsed.Milliseconds, 2000);
             }
             catch (Exception ex)

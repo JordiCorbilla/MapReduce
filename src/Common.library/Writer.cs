@@ -30,18 +30,18 @@ namespace Thundax.MapReduce
     /// </summary>
     public class Writer
     {
-        private static object locker = new object();
+        private static readonly object locker = new object();
 
         /// <summary>
         /// Write to file
         /// </summary>
-        /// <param name="Filepath"></param>
+        /// <param name="filepath"></param>
         /// <param name="text"></param>
-        public void WriteToFile(string Filepath, StringBuilder text)
+        public void WriteToFile(string filepath, StringBuilder text)
         {
             lock (locker)
             {
-                using (FileStream file = new FileStream(Filepath, FileMode.Append, FileAccess.Write, FileShare.Read))
+                using (FileStream file = new FileStream(filepath, FileMode.Append, FileAccess.Write, FileShare.Read))
                 using (StreamWriter writer = new StreamWriter(file, Encoding.Unicode))
                 {
                     writer.WriteLine(text.ToString());

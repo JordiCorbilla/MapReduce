@@ -78,7 +78,7 @@ namespace CountingWordsConsole
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Elapsed={0}", sw.Elapsed);
                 File.WriteAllText("Results.txt", reducer.SortedResults().ToString());
-                Console.WriteLine("Done!, processing {0:D} words", reducer.Numwords.ToString("N", CultureInfo.InvariantCulture));
+                Console.WriteLine("Done!, processing {0:D} words", reducer.NumWords.ToString("N", CultureInfo.InvariantCulture));
                 Console.WriteLine("Please review Results.txt");
                 Console.ResetColor();
 

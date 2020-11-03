@@ -51,7 +51,7 @@ namespace Thundax.MapReduce
         /// <summary>
         /// Number of words
         /// </summary>
-        public int Numwords { get; set; }
+        public int NumWords { get; set; }
 
         /// <summary>
         /// Constructor
@@ -61,13 +61,13 @@ namespace Thundax.MapReduce
             _distinctWordList = new ConcurrentDictionary<string, int>();
             var concurrentBag = new ConcurrentBag<string>();
             _wordChunks = new BlockingCollection<string>(concurrentBag);
-            Numwords = 0;
+            NumWords = 0;
         }
 
         /// <summary>
         /// Return a list of chunks
         ///Basic idea is that the file is being divided in chunks of 100 words and
-        ///then parallelly processed to increase performance
+        ///then in parallel processed to increase performance
         /// </summary>
         private static IEnumerable<string> CreateChunks(string text, int chunkSize)
         {
@@ -107,12 +107,12 @@ namespace Thundax.MapReduce
             }
             Task.WaitAll(tasks.ToArray());
 
-            for (int i = 0; i < list.Length; i++)
+            foreach (var t in list)
             {
-                if (list[i].Length > 0)
+                if (t.Length > 0)
                 {
-                    _wordChunks.Add(list[i].ToString());
-                    list[i].Clear();
+                    _wordChunks.Add(t.ToString());
+                    t.Clear();
                 }
             }          
         }
@@ -179,7 +179,7 @@ namespace Thundax.MapReduce
             foreach (KeyValuePair<string, int> kvp in _distinctWordList.OrderBy(key => key.Key))
             {
                 sb.AppendLine(kvp.Key + ": " + kvp.Value);
-                Numwords += kvp.Value;
+                NumWords += kvp.Value;
             }
             return sb;
         }
