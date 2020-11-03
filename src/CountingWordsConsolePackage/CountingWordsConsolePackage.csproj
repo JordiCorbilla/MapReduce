@@ -43,8 +43,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="Thundax.MapReduce, Version=1.0.0.0, Culture=neutral, PublicKeyToken=766a72edc4850c3e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Thundax.MapReduce.dll.1.0.0\lib\net461\Thundax.MapReduce.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Thundax.MapReduce.dll.1.1.0\lib\net48\Thundax.MapReduce.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

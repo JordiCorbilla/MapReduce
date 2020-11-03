@@ -33,24 +33,24 @@ namespace CountingWordsConsolePackage
                 return 1;
             }
 
-            StateTimeClass StateObj = new StateTimeClass();
-            StateObj.Canceled = false;
-            StateObj.handler = new PerformanceHandler();
-            StateObj.Value = 1;
-            System.Threading.TimerCallback TimerDelegate = new System.Threading.TimerCallback(TimerTask);
+            StateTimeClass stateObj = new StateTimeClass
+            {
+                Canceled = false, Handler = new PerformanceHandler(), Value = 1
+            };
+            System.Threading.TimerCallback timerDelegate = TimerTask;
 
             // Create a timer that calls a procedure every 200ms
             // Note: There is no Start method; the timer starts running as soon as 
             // the instance is created.
-            System.Threading.Timer TimerItem = new System.Threading.Timer(TimerDelegate, StateObj, 100, 100);
+            System.Threading.Timer timerItem = new System.Threading.Timer(timerDelegate, stateObj, 100, 100);
 
             // Save a reference for Dispose.
-            StateObj.Reference = TimerItem;
+            stateObj.Reference = timerItem;
 
             Reducer reducer = new Reducer();
             try
             {
-                SystemDetails.ShowCPUDetails();
+                SystemDetails.ShowCpuDetails();
                 Stopwatch sw = new Stopwatch();
                 string readText = File.ReadAllText(args[0]);
                 Console.WriteLine("Starting reduction");
@@ -61,7 +61,7 @@ namespace CountingWordsConsolePackage
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Elapsed={0}", sw.Elapsed);
                 File.WriteAllText("Results.txt", reducer.SortedResults().ToString());
-                Console.WriteLine("Done!, processing {0:D} words", reducer.Numwords.ToString("N", CultureInfo.InvariantCulture));
+                Console.WriteLine($"Done!, processing {reducer.NumWords.ToString("N", CultureInfo.InvariantCulture)} words");
                 Console.WriteLine("Please review Results.txt");
                 Console.ResetColor();
 
@@ -72,23 +72,23 @@ namespace CountingWordsConsolePackage
             }
 
             // Request Dispose of the timer object.
-            StateObj.Canceled = true;
+            stateObj.Canceled = true;
 
             return 0;
         }
 
-        private static void TimerTask(object Status)
+        private static void TimerTask(object status)
         {
-            StateTimeClass State = (StateTimeClass)Status;
+            StateTimeClass state = (StateTimeClass)status;
             // Use the interlocked class to increment the counter variable.
-            System.Threading.Interlocked.Increment(ref State.Value);
-            Debug.WriteLine("Launched new thread  " + DateTime.Now.ToString());
-            State.handler.flushToDisk();
-            if (State.Canceled)
+            System.Threading.Interlocked.Increment(ref state.Value);
+            Debug.WriteLine("Launched new thread  " + DateTime.UtcNow);
+            state.Handler.FlushToDisk();
+            if (state.Canceled)
             // Dispose Requested.
             {
-                State.Reference.Dispose();
-                Debug.WriteLine("Done  " + DateTime.Now.ToString());
+                state.Reference.Dispose();
+                Debug.WriteLine("Done  " + DateTime.UtcNow);
             }
         }
     }
