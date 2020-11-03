@@ -43,3 +43,9 @@ C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\Thundax.MapR
 C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\obj\Debug\MapReduce.Tests.csprojAssemblyReference.cache
 C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\obj\Debug\MapReduce.Tests.csproj.CoreCompileInputs.cache
 C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\obj\Debug\MapReduce.Tests.csproj.CopyComplete
+C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\MapReduce.Tests.dll.config
+C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\nunit.framework.pdb
+C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\thund\Source\Repos\MapReduce\src\MapReduce.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
