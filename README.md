@@ -6,7 +6,7 @@
 This is one my solution for this common problem using MapReduce.
 The best way to process any task is to split it in several chunks and divide the work amongst several **'workers'** in a distributed way and then compose the results in a later stage. 
 
-For this problem I am using **MapReduce approach** using **LINQ** and **.NET 4.6**.
+For this problem I am using **MapReduce approach** using **LINQ** and **.NET 4.8**.
 
 Processing the file sequentially and keeping the results in a **dictionary <key, value>** is an easy task but with a really bad performance. Using MapReduce strategy we could split the work and then combine the results in a concurrent dictionary:
 
