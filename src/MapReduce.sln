@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCServiceMessage", "TCServi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountingWordsConsolePackage", "CountingWordsConsolePackage\CountingWordsConsolePackage.csproj", "{3F41E0B9-C608-4E9B-A94E-B889D46D9733}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thundax.MapReduce.Library", "Thundax.MapReduce.Library\Thundax.MapReduce.Library.csproj", "{74AEF126-7635-4FE0-AD2F-E5F33CA9A590}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{3F41E0B9-C608-4E9B-A94E-B889D46D9733}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F41E0B9-C608-4E9B-A94E-B889D46D9733}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F41E0B9-C608-4E9B-A94E-B889D46D9733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74AEF126-7635-4FE0-AD2F-E5F33CA9A590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74AEF126-7635-4FE0-AD2F-E5F33CA9A590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74AEF126-7635-4FE0-AD2F-E5F33CA9A590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74AEF126-7635-4FE0-AD2F-E5F33CA9A590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
