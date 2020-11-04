@@ -44,7 +44,7 @@ namespace MapReduce.Tests
             Reducer reducer = new Reducer();
             try
             {
-                SystemDetails.ShowCPUDetails();
+                SystemDetails.ShowCpuDetails();
                 Stopwatch sw = new Stopwatch();
                 string readText = @"word word word word word";
                 Console.WriteLine("Starting reduction");
