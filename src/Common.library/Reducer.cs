@@ -98,9 +98,7 @@ namespace Thundax.MapReduce
             foreach (string word in words)
             {
                 int i = index;
-                tasks.Add( 
-                    Task.Factory.StartNew(() =>
-                    {
+                tasks.Add(Task.Factory.StartNew(() => {
                         LetterOrDigit(word, list[i]);
                     }));
                 index++;
@@ -119,11 +117,10 @@ namespace Thundax.MapReduce
 
         private static void LetterOrDigit(string word, StringBuilder sb)
         {
-            foreach (char c in word)
+            //We could add more filtering here as I'm just considering letters or digits.
+            foreach (var c in word.Where(char.IsLetterOrDigit))
             {
-                //We could add more filtering here as I'm just considering letters or digits.
-                if (char.IsLetterOrDigit(c))
-                    sb.Append(c);
+                sb.Append(c);
             }
         }
 
@@ -148,7 +145,9 @@ namespace Thundax.MapReduce
         //It will use a thread safe delegate to increment the value by 1 otherwise it will be defaulted to 1.
         private void UpdateDictionary()
         {
-            Parallel.ForEach(_wordChunks.GetConsumingEnumerable(), word => { _distinctWordList.AddOrUpdate(word, 1, (key, oldValue) => Interlocked.Increment(ref oldValue)); });
+            Parallel.ForEach(_wordChunks.GetConsumingEnumerable(), 
+                word => { _distinctWordList.AddOrUpdate(word, 1, 
+                    (key, oldValue) => Interlocked.Increment(ref oldValue)); });
         }
 
         /// <summary>

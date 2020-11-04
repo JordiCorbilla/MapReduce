@@ -20,7 +20,7 @@ namespace CountingWordsConsolePackage
             Console.WriteLine(@"\_|  |_/\__,_| .__/\_| \_\___|\__,_|\__,_|\___\___|");
             Console.WriteLine(@"             | |                                   ");
             Console.WriteLine(@"             |_|                                   ");
-            Console.WriteLine(@" approach by Jordi Corbilla, 2016");
+            Console.WriteLine(@" approach by Jordi Corbilla, 2016-2020");
             Console.WriteLine(@"");
             Console.ResetColor();
             if (args.Length == 0)
